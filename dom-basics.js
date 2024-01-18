@@ -22,7 +22,7 @@ document.body.appendChild(newSection)
 // newH2.innerText = "CSE 121b";
 // newSection.appendChild(newH2);
 // const newP = document.createElement("p");
-// newH2.innerText = "Welcome to Javascript Language";
+// newP.innerText = "Welcome to Javascript Language";
 // newSection.appendChild(newP);
 
 // document.body.appendChild(newSection);
