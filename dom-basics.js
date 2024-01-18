@@ -26,3 +26,5 @@ document.body.appendChild(newSection)
 // newSection.appendChild(newP);
 
 // document.body.appendChild(newSection);
+
+//新的innerHTML文字新增好後，就可以子目錄的方式新增上去
