@@ -84,5 +84,13 @@ let sumarray = numbers.reduce((sumtotal, numbers) => sumtotal + numbers);
 sumArray.innerHTML = sumarray;
 
 /* Output Multiplied by 2 Array */
+const multArray = document.querySelector("#multiplied");
+let multarray = numbers.map(numbers => numbers * 2);
+multArray.innerHTML = `<br>${multarray}`;
 
 /* Output Sum of Multiplied by 2 Array */
+const sumultArray = document.querySelector("#sumOfMultiplied");
+let sumultarray = multarray.reduce((sumultotal, multarray) => sumultotal + multarray);
+sumultArray.innerHTML = `<br>${sumultarray}`;
+
+
