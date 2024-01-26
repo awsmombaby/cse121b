@@ -50,3 +50,21 @@ const grAde = myGrade.map(grade); //直接把function丟進map去循環找成績
 // Using reduce calculate the GPA from the array of gpaPoints.
 const grAdetotal = grAde.reduce((point, gap) => point + gap);
 const gradeAverage = grAdetotal / grAde.length;
+
+// Activity 4 - Filter
+let words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+// function wordslength6(word){
+//     let newords = []
+//     if (word.length >= 6){
+//         newords.push();
+//     }
+//     return newords;
+// }
+let wordslen6 = words.filter((word) => word.length > 6); // word = wordlength6
+
+// Activity 5 - indexOf
+let indexnumbers = [12, 34, 21, 54];
+let luckNumber = 21;
+let findnumberIndex = indexnumbers.indexOf(luckNumber); //2
+
+
