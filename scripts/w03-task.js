@@ -91,6 +91,6 @@ multArray.innerHTML = `<br>${multarray}`;
 /* Output Sum of Multiplied by 2 Array */
 const sumultArray = document.querySelector("#sumOfMultiplied");
 let sumultarray = multarray.reduce((sumultotal, multarray) => sumultotal + multarray);
-sumultArray.innerHTML = `<br>${sumultarray}`;
+sumultArray.innerHTML = sumultarray;
 
 
