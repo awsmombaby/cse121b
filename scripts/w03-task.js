@@ -56,7 +56,7 @@ function gettotaldue(){
     let discount = 0;
     if (membercheck === true) {
         discount = 0.15;
-    }
+    } 
     memberdis = numeric * discount;
     memberdis = memberdis.toFixed(2)
     totaltext.innerHTML = `$ ${memberdis}`;
@@ -70,12 +70,12 @@ const numbersArray = document.querySelector("#array");
 numbersArray.innerHTML = numbers;
 /* Output Odds Only Array */
 const oddsArray = document.querySelector("#odds");
-let odds = numbers.filter(number => number % 2 === 0);
+let odds = numbers.filter(number => number % 2 === 1);
 oddsArray.innerHTML = odds;
 
 /* Output Evens Only Array */
 const evensArray = document.querySelector("#evens");
-let evens = numbers.filter(number => number % 2 === 1); //number就是index,變數放置位置
+let evens = numbers.filter(number => number % 2 === 0); //number就是index,變數放置位置
 evensArray.innerHTML = evens;
 
 /* Output Sum of Org. Array */
