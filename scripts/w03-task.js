@@ -55,7 +55,7 @@ function gettotaldue(){
     let membercheck = document.querySelector("#member").checked;
     let discount = 0;
     if (membercheck === true) {
-        discount = 0.15;
+        discount = 0.2;
     } 
     memberdis = numeric * discount;
     memberdis = memberdis.toFixed(2)
