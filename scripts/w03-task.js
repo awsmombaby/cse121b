@@ -16,9 +16,8 @@ function addNumbers(){
 document.querySelector("#addNumbers").addEventListener("click", addNumbers);
 
 /* Function Expression - Subtract Numbers */
-function subtract(number1, number2){
-    return number1 - number2;
-}
+const subtract = function(number1, number2){return number1 - number2;}                                             //Fixed code
+
 function subtractNumbers(){
     let subNumber1 = Number(document.querySelector("#subtract1").value);
     let subNumber2 = Number(document.querySelector("#subtract2").value);
@@ -26,10 +25,10 @@ function subtractNumbers(){
 }
 document.querySelector("#subtractNumbers").addEventListener("click", subtractNumbers);
 
+
 /* Arrow Function - Multiply Numbers */
-function multiply(number1, number2){
-    return number1 * number2;  
-}
+const multiply = (number1, number2) => {return number1 * number2;}                                                 //Fixed code
+
 function multiplyNumbers(){
     let facNumber1 = Number(document.querySelector("#factor1").value);
     let facNumber2 = Number(document.querySelector("#factor2").value);
@@ -38,9 +37,8 @@ function multiplyNumbers(){
 document.querySelector("#multiplyNumbers").addEventListener("click", multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
-function divide(dividend, divisor){
-        return dividend / divisor;
-    }
+const divide = (dividend, divisor) => {return dividend / divisor;}                                                 //Fixed code
+
 function divideNumbers(){
     let dividendnum = Number(document.querySelector("#dividend").value);
     let divisornum = Number(document.querySelector("#divisor").value);
@@ -49,18 +47,17 @@ function divideNumbers(){
 document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 
 /* Decision Structure */
-function gettotaldue(){
+function gettotaldue(){                                                                                             //Fixed code
     let numeric = Number(document.querySelector("#subtotal").value);
     const totaltext = document.querySelector("#total");
     let membercheck = document.querySelector("#member").checked;
+
     let discount = 0;
-    if (membercheck === true) {
-        discount = 0.2;
-    } 
-    memberdis = numeric * discount;
-    memberdis = memberdis.toFixed(2)
-    totaltext.innerHTML = `$ ${memberdis}`;
-}
+    if (membercheck === true) {discount = 0.2;} 
+        let disvalue = multiply(numeric, discount);
+        let memberdis = subtract(numeric, disvalue);
+        totaltext.innerHTML = `$ ${memberdis.toFixed(2)}`;
+    }
 document.querySelector("#getTotal").addEventListener("click", gettotaldue);
 
 /* ARRAY METHODS - Functional Programming */
